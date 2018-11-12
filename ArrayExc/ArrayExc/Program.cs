@@ -22,6 +22,7 @@ namespace ArrayExc
             }
             Console.WriteLine();
         }
+
         static int[] FilterEvanNumbers(int[] array)
         {
             int count = 0;
@@ -37,12 +38,12 @@ namespace ArrayExc
             {
                 if (array[i] % 2 == 0)
                 {
-                    evanNumbersArray[j] = array[i];
-                    j++;
+                    evanNumbersArray[j++] = array[i];
                 }
             }
             return evanNumbersArray;
         }
+
         static int WhatsMyMaxNum(int[] array)
         {
             int max = array[0];
@@ -53,6 +54,7 @@ namespace ArrayExc
             }
             return max;
         }
+
         static string MaxEarningsCompany(int[] array,string[] companies)
         {
             int max = array[0],index=0;
